@@ -1,0 +1,21 @@
+
+@import "variables";
+
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-image: url("./img/background@1X.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+form .form-control {
+  border-color: $gray-input;
+  background-color: $gray-input;
+  &:focus {
+    background-color: darken($gray-input, 0.4);
+  }
+}

@@ -1,0 +1,87 @@
+//@import "~bootstrap/scss/variables";
+$white:   #fff !default;
+$gray-bg: #262730;
+$gray-input: #3A3A46;
+$black:    #000 !default;
+
+$grays: () !default;
+$grays: map-merge(
+                (
+                        "bg": $gray-bg
+                ),
+                $grays
+);
+
+$blue:    #7979E2 !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: () !default;
+$colors: map-merge(
+                (
+                        "blue":       $blue,
+                        "indigo":     $indigo,
+                        "purple":     $purple,
+                        "pink":       $pink,
+                        "red":        $red,
+                        "orange":     $orange,
+                        "yellow":     $yellow,
+                        "green":      $green,
+                        "teal":       $teal,
+                        "cyan":       $cyan,
+                        "white":      $white,
+                        "gray":       $gray-bg,
+
+                ),
+                $colors
+);
+
+$primary:       $blue !default;
+$secondary:     $gray-bg !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$dark:          $gray-bg !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+                (
+                        "primary":    $primary,
+                        "secondary":  $secondary,
+                        "success":    $success,
+                        "info":       $info,
+                        "warning":    $warning,
+                        "danger":     $danger,
+                        "dark":       $dark
+                ),
+                $theme-colors
+);
+// default font
+$body-color:                $white !default;
+
+$font-size-base:              1rem !default;
+$h5-font-size:                $font-size-base * 1.125;
+
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+                (
+                        0: 0,
+                        1: ($spacer * .25),
+                        2: ($spacer * .5),
+                        3: $spacer,
+                        4: ($spacer * 1.25),
+                        5: ($spacer * 2.5),
+                        6: ($spacer * 3)
+                ),
+                $spacers
+);
