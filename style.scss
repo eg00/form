@@ -1,8 +1,11 @@
 
 @import "variables";
 
-
 @import "~bootstrap/scss/bootstrap";
+
+// fonts
+@import "fonts/icomoon-v1.0/variables";
+@import "fonts/icomoon-v1.0/style";
 
 body {
   background-repeat: no-repeat;
@@ -18,4 +21,6 @@ form .form-control {
   &:focus {
     background-color: darken($gray-input, 0.4);
   }
+
 }
+

@@ -1,8 +1,9 @@
 //@import "~bootstrap/scss/variables";
-$white:   #fff !default;
+$white: #fff !default;
 $gray-bg: #262730;
 $gray-input: #3A3A46;
-$black:    #000 !default;
+$icon: #b4b4b4;
+$black: #000 !default;
 
 $grays: () !default;
 $grays: map-merge(
@@ -12,63 +13,64 @@ $grays: map-merge(
                 $grays
 );
 
-$blue:    #7979E2 !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #28a745 !default;
-$teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
+$blue: #7979E2 !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
 
 $colors: () !default;
 $colors: map-merge(
                 (
-                        "blue":       $blue,
-                        "indigo":     $indigo,
-                        "purple":     $purple,
-                        "pink":       $pink,
-                        "red":        $red,
-                        "orange":     $orange,
-                        "yellow":     $yellow,
-                        "green":      $green,
-                        "teal":       $teal,
-                        "cyan":       $cyan,
-                        "white":      $white,
-                        "gray":       $gray-bg,
-
+                        "blue": $blue,
+                        "indigo": $indigo,
+                        "purple": $purple,
+                        "pink": $pink,
+                        "red": $red,
+                        "orange": $orange,
+                        "yellow": $yellow,
+                        "green": $green,
+                        "teal": $teal,
+                        "cyan": $cyan,
+                        "white": $white,
+                        "gray": $gray-bg,
+                        "icon": $icon,
                 ),
                 $colors
 );
 
-$primary:       $blue !default;
-$secondary:     $gray-bg !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$dark:          $gray-bg !default;
+$primary: $blue !default;
+$secondary: $gray-bg !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$dark: $gray-bg !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
                 (
-                        "primary":    $primary,
-                        "secondary":  $secondary,
-                        "success":    $success,
-                        "info":       $info,
-                        "warning":    $warning,
-                        "danger":     $danger,
-                        "dark":       $dark
+                        "primary": $primary,
+                        "secondary": $secondary,
+                        "success": $success,
+                        "info": $info,
+                        "warning": $warning,
+                        "danger": $danger,
+                        "dark": $dark,
+                        "icon": $icon,
                 ),
                 $theme-colors
 );
 // default font
-$body-color:                $white !default;
+$body-color: $white !default;
 
-$font-size-base:              1rem !default;
-$h5-font-size:                $font-size-base * 1.125;
+$font-size-base: 1rem !default;
+$h5-font-size: $font-size-base * 1.125;
 
 
 $spacer: 1rem !default;
@@ -85,3 +87,13 @@ $spacers: map-merge(
                 ),
                 $spacers
 );
+
+$input-group-addon-bg: $gray-input;
+$input-group-addon-border-color: $gray-input;
+
+$btn-font-weight: 700;
+$btn-font-size: 14px;
+
+$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
+$box-shadow:                  0px 2px 2px rgba(0,0,0,1);
+$box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
